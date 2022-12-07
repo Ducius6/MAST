@@ -90,11 +90,6 @@ class ASTLexer(Lexer):
         super().__init__(text)
 
     def get_next_token(self):
-        """Lexical analyzer (also known as scanner or tokenizer)
-
-        This method is responsible for breaking a sentence
-        apart into tokens. One token at a time.
-        """
         while self.current_char is not None:
 
             if self.current_char.isspace():
@@ -294,11 +289,6 @@ class ExpressionLexer(Lexer):
         super().__init__(text)
 
     def get_next_token(self):
-        """Lexical analyzer (also known as scanner or tokenizer)
-
-        This method is responsible for breaking a sentence
-        apart into tokens. One token at a time.
-        """
         while self.current_char is not None:
 
             if self.current_char.isspace():
