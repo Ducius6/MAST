@@ -31,6 +31,6 @@ Method verfy_mast returns True if each of the conditions fulfilled, if some cond
 Example of creating MASTVerification and verifying tree:
 ```python
 mast_verificator = MASTVerification(root_hash, global_state, [evidence_list[0]])
-mast_verificator.verify_mast()
+result = mast_verificator.verify_mast()
 ```   
  
